@@ -1,0 +1,50 @@
+.container{
+    width: 1200px;
+    height: 100svh;
+    min-height: min-content;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+
+nav {   
+    background-color: red;
+}
+
+.right-part{
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    gap: 20px;
+}
+
+.top-part{
+    background-color: green;
+}
+
+main {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projects {
+    background-color: blueviolet;
+}
+
+.other{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: 1fr 300px;
+    gap:20px;
+}
+
+.announcements {
+    background-color: coral;
+}
+
+.trending {
+    background-color: skyblue;
+}
