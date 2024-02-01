@@ -8,8 +8,9 @@
     gap: 20px;
 }
 
-nav {   
-    background-color: red;
+.left-part {   
+    background-color: rgb(53, 150, 211);
+    color: white;
 }
 
 .right-part{
