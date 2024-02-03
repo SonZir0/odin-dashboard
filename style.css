@@ -11,6 +11,31 @@
 .left-part {   
     background-color: rgb(53, 150, 211);
     color: white;
+    padding: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    list-style-type: none;
+    
+    & li span {
+        font-size: 1.5rem;
+    }
+}
+
+.dashboard-header,
+li {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+    align-items: center;
+
+    & img {
+        justify-self: center;
+    }
 }
 
 .right-part{
