@@ -23,12 +23,12 @@ html {
 }
 
 .container {
-    width: clamp(1050px, 100%, 1400px);
+    width: clamp(1050px, 100%, 1600px);
     height: 100svh;
     min-height: min-content;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 2fr 7fr;
 }
 
 .left-part {
@@ -179,6 +179,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    padding-bottom: 28px;
 
     & .card {
         background: linear-gradient(to right, gold 8px, var(--top_and_card_color) 8px);
@@ -251,4 +252,19 @@ main {
         justify-items: center;
     }
 
+}
+
+@media (width >= 1600px) {
+    body {
+        display: flex;
+    }
+
+    .container {
+        flex: none;
+    }
+
+    .filler {
+        flex: 1;
+        background-color: rgb(15, 50, 71);
+    }
 }
