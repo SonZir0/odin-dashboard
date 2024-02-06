@@ -18,6 +18,10 @@ html {
     border-radius: 50%;
 }
 
+.textbox {
+    justify-self: normal;
+}
+
 .container {
     width: clamp(1050px, 100%, 1400px);
     height: 100svh;
@@ -135,10 +139,6 @@ li {
     justify-items: center;
     margin-top: 20px;
 
-    & .textbox {
-        justify-self: normal;
-    }
-
     & button {
         color: white;
         background-color: var(--panel_buttons_color);
@@ -156,7 +156,7 @@ main {
     padding: 0px 20px;
 
     & h1 {
-        margin: 0.5rem;
+        margin: 0.5rem 0px;
         font-size: 1.25rem;
     }
 
@@ -216,7 +216,7 @@ main {
 }
 
 /*padding is split between grid container and divs to make sure
-  that all the divs approximatly the same size*/
+  that all the divs approximately the same size*/
 .announcements-grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -234,6 +234,21 @@ main {
     }
 }
 
-.trending {
-    padding: 12px 0px
+.trending-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    background: var(--top_and_card_color);
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    & >div {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        gap: 16px;
+        align-items: center;
+        justify-items: center;
+    }
+
 }
